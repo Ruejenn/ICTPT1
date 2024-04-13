@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+<title>Survey</title>
+<h1>Entertaining Survey</h1>
+<h2> Don't know what to do? make sure to answer these 10 mind tickling questions<br>
+which will surely make you amused. What are you waiting for? Answer it now!</h2>
+<br>
+<br>
+<style>
+h1 {
+background:#fe921f;
+color: #ffffff;
+display: inline-block;
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+font-weight: bold;
+line-height: 20px;
+letter-spacing: 1px;
+margin: 0 0 38px;
+padding: 18px 23px 16px;
+text-transform: uppercase; }
+h2 { color: #111;
+font-family: 'Helvetica Neue', sans-serif;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: -1px;
+line-height: 1;
+text-align: left; }
+
+{ background-color: #ffa500;
+font-family: Verdana;
+}
+img {
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 70%;
+filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
+form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+display: inline-block;
+width: auto;
+text-align:left
+}
+h3 {
+background-color: #fff;
+max-width: 500px;
+padding: 30px 20px;
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+body {
+background-color: rgb(255, 255, 146);
+}
+</style>
+    
+</style>
+</head>
+<body> <form>
+<img src="thinkingface.png" width="500" height="500">
+<h1>Survey</h1>
+<br>
+<h3> What is your full name?</h3>
+<input type="text" placeholder="Enter Full Name Here" id="mm"><br><br>
+<h3> Please type in your email.</h3>
+<input type="text" placeholder="Enter Full Name Here" id="aa"><br><br>
+<h3> What section are you from?</h3>
+<input type="text" placeholder="Enter Age Here" id="bb"><br><br>
+<h2> II. SURVEY QUESTIONS</h2><br><br>
+
+<h3>1. Anong lugar ang kadalasan may umiiyak?</h3>
+<input type="text" placeholder="Enter Section Name Here" id="cc"><br><br>
+<h3>2. Anong bagay ang kinakatakutan mo hanggang sa pagtanda?</h3>
+<input type="text" placeholder="Enter School Name Here" id="dd"><br><br>
+<h3>3. Ano ang madalas na handa sa isang birthday party?</h3>
+<input type="text" placeholder="Enter Gender Here" id="ee"><br><br>
+<h3>4. Ano/Magbigay ng bagay na nilo-lock?</h3>
+<input type="text" placeholder="Enter Address Here" id="ff"><br><br>
+<h3>5. Bakit umiiyak ang isang tao? Magbigay ng maaaring dahilan</h3>
+<input type="text" placeholder="Enter Subject Here" id="gg"><br><br>
+<h3>6. Kung ikaw ay may pagkakataong maging hayop, anong hayop ka?</h3> 
+<input type="text" placeholder="Enter Subject Here" id="hh"><br><br>
+<h3>7. Saang direksyon papunta ang One Direction?</h3>
+<input type="text" placeholder="Enter Subject Here" id="ii"><br><br>
+<h3>8. Saan binaril si Jose Rizal?</h3>
+<select id="jj">
+    <option>Sa Luneta Park</option>
+    <option>Sa Likod</option>
+    <option>Sa Bagumbayan</option>
+    <option>Sa maraming tao</option>
+</select>
+<h3>9. Ano ang apelyido ni Harry?</h3>
+<select id="kk">
+    <option>Roque</option>
+    <option>Styles</option>
+    <option>Potter</option>
+</select>
+<h3>10. Ano ang right?</h3>
+<select id="ll">
+    <option>Kanan</option>
+    <option>Karapatan</option>
+    <option>Tama</option>
+</select><br><br>
+
+<button onclick="free()">Submit</button>
+
+<script>
+    function free()
+    { 
+        var n = document.getElementById("mm").value;
+        var x = document.getElementById("aa").value;
+        var y = document.getElementById("bb").value;
+        var z = document.getElementById("cc").value;
+        var w = document.getElementById("dd").value;
+        var u = document.getElementById("ee").value;
+        var v = document.getElementById("ff").value;
+        var o = document.getElementById("gg").value;
+        var p = document.getElementById("hh").value;
+        var r = document.getElementById("ii").value;
+        var s = document.getElementById("jj").value;
+        var t = document.getElementById("kk").value;
+        var q = document.getElementById("ll").value;
+
+        var nn = localStorage.setItem("FullName",n);
+        var xx = localStorage.setItem("Email", x);
+        var yy = localStorage.setItem("Section", y);
+        var zz = localStorage.setItem("Question1", z);
+        var ww = localStorage.setItem("Question2", w);
+        var uu = localStorage.setItem("Question3", u);
+        var vv = localStorage.setItem("Question4", v);
+        var oo = localStorage.setItem("Question5", o);
+        var pp = localStorage.setItem("Question6", p);
+        var rr = localStorage.setItem("Question7", r);
+        var ss = localStorage.setItem("Question8", s);
+        var tt = localStorage.setItem("Question9", t);
+        var qq = localStorage.setItem("Question10", q);
+        
+    }
+</script>
+</form>
+</body>
+</html>
